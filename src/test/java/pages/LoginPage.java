@@ -5,7 +5,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-public class actiTIME_LoginPage {
+public class LoginPage {
 	WebDriver driver;
 
 	@FindBy(id ="username")
@@ -18,7 +18,7 @@ public class actiTIME_LoginPage {
 	private WebElement login;
 	
 	
-	public actiTIME_LoginPage(WebDriver driver) {
+	public LoginPage(WebDriver driver) {
 		this.driver = driver;
 		PageFactory.initElements(driver, this);
 	}
