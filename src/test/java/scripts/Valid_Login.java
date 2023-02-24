@@ -12,12 +12,15 @@ public class Valid_Login extends BaseTest {
 	
 	@Test (priority = 1)
 	public void testValidLogin() {
+//		Get the data from excel file
+		String username = Excel.getData("./data/InputData.xlsx", "TestCase1", 1, 0);
+		String pwd = Excel.getData("./data/InputData.xlsx", "TestCase1", 1, 1);
 //		1. Enter valid username
 		LoginPage loginPage = new LoginPage(driver);
-		String username = Excel.getData("./data/InputData.xlsx", "TestCase1", 1, 0);
+		
 		loginPage.setUserName(username);
 //		2. Enter valid password
-		String pwd = Excel.getData("./data/InputData.xlsx", "TestCase1", 1, 1);
+		
 		loginPage.setPassword(pwd);
 //		3. Click on login
 		loginPage.clickLoginBtn();
