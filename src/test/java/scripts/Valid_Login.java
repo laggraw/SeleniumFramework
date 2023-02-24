@@ -10,7 +10,7 @@ import pages.LoginPage;
 
 public class Valid_Login extends BaseTest {
 	
-	@Test (priority = 1)
+	@Test (priority = 2)
 	public void testValidLogin() {
 //		Get the data from excel file
 		String username = Excel.getData("./data/InputData.xlsx", "TestCase1", 1, 0);
