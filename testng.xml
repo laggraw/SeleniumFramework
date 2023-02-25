@@ -1,7 +1,7 @@
 <suite name="Suite">
 	<test name="Test">
 		<parameter name="browser" value="chrome" />
-		<parameter name="gridurl" value="http://192.168.1.100:4444"/>
+		<parameter name="gridurl" value="http://192.168.29.205:4444"/>
 		<parameter name="url" value="https://demo.actitime.com/login.do" />
 		<parameter name="timeout" value="10" />
 		<packages>

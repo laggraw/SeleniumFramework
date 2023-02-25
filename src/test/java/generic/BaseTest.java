@@ -23,7 +23,7 @@ public class BaseTest {
 	public final String dBrowser = "chrome";
 	public final String dUrl = "https://demo.actitime.com/login.do";
 	public final String DTimeout = "10";
-	public final String dGridUrl = " http://192.168.1.100:4444";
+	public final String dGridUrl = "http://192.168.29.205:4444";
 	
 	@Parameters({"browser", "gridurl", "url", "timeout"})
 	@BeforeMethod
